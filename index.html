@@ -3,27 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#151318">
+<meta name="theme-color" content="#0a1122">
 <title>Pilares · Tren superior</title>
 <style>
-:root{color-scheme:dark;--bg:#151318;--panel:#201d24;--line:#37313d;--ink:#f8f4f8;--muted:#c3b7c6;--accent:#ffb1a6;--dark:#27151a}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,sans-serif}button,input{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}main{max-width:630px;margin:auto;padding:18px 16px 34px}
-.brand{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;font-weight:850;letter-spacing:.17em;font-size:12px}.brand small{font-weight:650;color:var(--muted);letter-spacing:.08em}.logo{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--accent);color:var(--dark);margin-right:7px;font-size:14px;letter-spacing:0}
-.hero{position:relative;overflow:hidden;isolation:isolate;background:var(--accent);color:var(--dark);border-radius:20px;padding:22px 20px}.hero svg{position:absolute;z-index:-1;right:-10px;bottom:-35px;width:48%;min-width:150px;height:auto;opacity:.26}.eyebrow{margin:0;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:850}.hero h1{font-size:clamp(41px,9vw,70px);letter-spacing:-.075em;line-height:.88;margin:12px 0 16px;font-weight:950;text-transform:uppercase}.hero p:last-of-type{margin:0;font-weight:680;font-size:13px}
-.controls{margin-top:23px}.label{margin:0 0 8px;color:var(--muted);font-size:11px;letter-spacing:.13em;font-weight:780;text-transform:uppercase}.grid{display:grid;gap:7px;grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:15px}.grid.days{grid-template-columns:repeat(3,minmax(0,1fr))}.option,.timer-btn{border:1px solid var(--line);background:var(--panel);border-radius:10px;min-height:44px;padding:7px;font-size:13px;font-weight:750}.option[aria-pressed="true"]{color:var(--dark);background:var(--accent);border-color:var(--accent)}.day-count{display:block;font-size:10px;font-weight:650;opacity:.83}
-.session{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:23px 0 6px}.session h2{margin:0;font-size:24px;letter-spacing:-.045em}.session span{font-size:12px;color:var(--accent);font-weight:750}progress{display:block;width:100%;height:6px;border:none;border-radius:10px;overflow:hidden;background:var(--line);accent-color:var(--accent);margin:0 0 10px}progress::-webkit-progress-bar{background:var(--line)}progress::-webkit-progress-value{background:var(--accent)}progress::-moz-progress-bar{background:var(--accent)}
-.hint{margin:0 0 11px;color:var(--muted);font-size:13px}.card{border:1px solid var(--line);background:var(--panel);border-radius:15px;padding:13px;margin-bottom:8px}.card.done{border-color:#a77572}.card-top{display:flex;align-items:flex-start;gap:10px}.number{flex:none;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.1em;padding-top:4px}.card h3{margin:0;font-size:16px;line-height:1.25}.target{margin:3px 0 0;color:var(--muted);font-size:12px}.log{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px}.sets{display:flex;gap:6px}.set{min-height:44px;min-width:44px;border:1px solid #534859;border-radius:9px;background:transparent;font-size:13px;font-weight:800}.set[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--dark)}.weight{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:12px}.weight input{width:72px;padding:7px;border:1px solid #534859;border-radius:9px;min-height:44px;background:#151318;color:var(--ink);font-size:16px;text-align:center}.weight input::placeholder{color:#9c8da0}
-details{margin-top:14px;border:1px solid var(--line);border-radius:13px;padding:10px 13px;color:var(--muted);font-size:13px}summary{cursor:pointer;color:var(--ink);font-weight:750;padding:4px 0}details ol{padding-left:21px;margin:8px 0 4px}details li{margin-bottom:5px}footer{color:var(--muted);font-size:11px;margin:13px 0 0;text-align:center}
-.timer{position:sticky;bottom:0;z-index:2;margin-top:14px;padding:8px 0 max(8px,env(safe-area-inset-bottom));background:var(--bg)}.timer-inner{border:1px solid var(--line);border-radius:14px;padding:8px;display:flex;gap:5px;align-items:center;justify-content:space-between;background:#29232d}.timer-read{padding:0 5px;min-width:62px}.timer-read .label{font-size:9px;margin:0}#clock{display:block;font-variant-numeric:tabular-nums;font-weight:850;color:var(--accent);font-size:18px;line-height:1.15}.timer-btn{padding:5px 7px;font-size:12px;min-width:44px}#stop{color:var(--muted)}#status{color:var(--accent);font-weight:750}
-@media(min-width:500px){main{padding-top:26px}.hero{padding:26px}.card{padding:15px}.timer-btn{flex:1}}@media(max-width:355px){main{padding-inline:10px}.timer-btn{padding-inline:4px}.timer-inner{gap:3px}.timer-read{min-width:55px;padding-inline:2px}}@media print{body{background:#fff;color:#000}.timer,.controls,footer,.log{display:none}.card{background:#fff;color:#000}.target,.hint,.number,.session span{color:#333}}
+:root{color-scheme:dark;--bg:#0a1122;--panel:#121c33;--line:#22304f;--ink:#eef3fc;--muted:#9fb0cd;--accent:#ff5c5c;--fill:#d42f34;--dark:#ffffff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,summary:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:3px}main{max-width:630px;margin:auto;padding:18px 16px 34px}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;font-weight:850;letter-spacing:.17em;font-size:12px}.brand small{font-weight:650;color:var(--muted);letter-spacing:.08em}.logo{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--fill);color:var(--dark);margin-right:7px;font-size:14px;letter-spacing:0}
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,#17264b,#0f1a33);border:1px solid var(--line);color:var(--ink);border-radius:20px;padding:22px 20px}.hero svg{position:absolute;z-index:-1;right:-4px;top:50%;transform:translateY(-50%);height:128%;width:auto;color:var(--accent);opacity:.24}.bg-logo{position:fixed;inset:0;z-index:0;display:grid;place-items:center;pointer-events:none}.bg-logo svg{width:min(78vw,540px);height:auto;color:var(--accent);opacity:.045}main{position:relative;z-index:1}.eyebrow{margin:0;color:var(--accent);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:850}.hero h1{font-size:clamp(41px,9vw,70px);letter-spacing:-.075em;line-height:.88;margin:12px 0 16px;font-weight:950;text-transform:uppercase}.hero p:last-of-type{margin:0;font-weight:680;font-size:13px;color:var(--muted)}
+.controls{margin-top:23px}.label{margin:0 0 8px;color:var(--muted);font-size:11px;letter-spacing:.13em;font-weight:780;text-transform:uppercase}.grid{display:grid;gap:7px;grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:15px}.grid.days{grid-template-columns:repeat(3,minmax(0,1fr))}.option,.timer-btn,.export-btn{border:1px solid var(--line);background:var(--panel);border-radius:10px;min-height:44px;padding:7px;font-size:13px;font-weight:750}.option[aria-pressed="true"]{color:var(--dark);background:var(--fill);border-color:var(--fill)}.day-count{display:block;font-size:10px;font-weight:650;opacity:.83}
+.session{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:23px 0 6px}.session h2{margin:0;font-size:24px;letter-spacing:-.045em}.session span{font-size:12px;color:var(--accent);font-weight:750}progress{display:block;width:100%;height:6px;border:none;border-radius:10px;overflow:hidden;background:var(--line);accent-color:var(--fill);margin:0 0 10px}progress::-webkit-progress-bar{background:var(--line)}progress::-webkit-progress-value{background:var(--fill)}progress::-moz-progress-bar{background:var(--fill)}
+.hint{margin:0 0 11px;color:var(--muted);font-size:13px}.card{border:1px solid var(--line);background:var(--panel);border-radius:15px;padding:13px;margin-bottom:8px}.card.done{border-color:#a8333a}.card-top{display:flex;align-items:flex-start;gap:10px}.number{flex:none;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.1em;padding-top:4px}.card h3{margin:0;font-size:16px;line-height:1.25}.target{margin:3px 0 0;color:var(--muted);font-size:12px}.prev{margin:4px 0 0;color:var(--accent);font-size:12px;font-weight:700}.log{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px}.sets{display:flex;gap:6px;flex-wrap:wrap}
+.card details.edit{margin-top:10px;border:1px dashed var(--line);border-radius:10px;padding:4px 10px;font-size:12px}.card details.edit summary{font-size:12px;color:var(--muted);padding:6px 0}.edit form{display:grid;gap:8px;padding:6px 0 8px}.edit label{display:grid;gap:4px;color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.04em}.edit input{width:100%;min-height:40px;padding:7px 9px;border:1px solid #2e4068;border-radius:9px;background:#0a1122;color:var(--ink);font-size:16px}.edit-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.edit-actions{display:flex;gap:8px;flex-wrap:wrap}.edit-actions button{min-height:40px;padding:6px 12px;border-radius:9px;border:1px solid var(--line);background:var(--panel);font-size:13px;font-weight:750}.edit-actions button[type=submit]{background:var(--fill);border-color:var(--fill);color:var(--dark)}.set{min-height:44px;min-width:44px;border:1px solid #2e4068;border-radius:9px;background:transparent;font-size:13px;font-weight:800}.set[aria-pressed="true"]{background:var(--fill);border-color:var(--fill);color:var(--dark)}.weight{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:12px}.weight input{width:72px;padding:7px;border:1px solid #2e4068;border-radius:9px;min-height:44px;background:#0a1122;color:var(--ink);font-size:16px;text-align:center}.weight input::placeholder{color:#6f80a3}
+details{margin-top:14px;border:1px solid var(--line);border-radius:13px;padding:10px 13px;color:var(--muted);font-size:13px}summary{cursor:pointer;color:var(--ink);font-weight:750;padding:4px 0}details ol{padding-left:21px;margin:8px 0 4px}details li{margin-bottom:5px}
+.export{margin-top:14px}.export-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}.export-btn{width:100%}.export-note{margin:7px 2px 0;color:var(--muted);font-size:12px}.add-btn{width:100%;min-height:46px;margin-top:2px;border:1px dashed #2e4068;border-radius:13px;background:transparent;color:var(--muted);font-size:13px;font-weight:750}.restore{display:block;margin:8px auto 0;border:none;background:none;color:var(--accent);font-size:12px;font-weight:700;text-decoration:underline;min-height:36px}.restore[hidden]{display:none}.edit-actions .danger{margin-left:auto;color:var(--accent)}#export-status{margin:6px 0 0;color:var(--accent);font-size:12px;font-weight:700;text-align:center}#export-text{display:none;width:100%;min-height:160px;margin-top:8px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);font-size:13px}#export-text.show{display:block}
+footer{color:var(--muted);font-size:11px;margin:13px 0 0;text-align:center}
+.timer{position:sticky;bottom:0;z-index:2;margin-top:14px;padding:8px 0 max(8px,env(safe-area-inset-bottom));background:var(--bg)}.timer-inner{border:1px solid var(--line);border-radius:14px;padding:8px;display:flex;gap:5px;align-items:center;justify-content:space-between;background:#0f1930}.timer-inner.running{border-color:var(--accent)}.timer-read{padding:0 5px;min-width:62px}.timer-read .label{font-size:9px;margin:0}#clock{display:block;font-variant-numeric:tabular-nums;font-weight:850;color:var(--accent);font-size:18px;line-height:1.15}.timer-btn{padding:5px 7px;font-size:12px;min-width:44px}#stop{color:var(--muted)}#status{color:var(--accent);font-weight:750;font-size:13px}
+@media(min-width:500px){main{padding-top:26px}.hero{padding:26px}.card{padding:15px}.timer-btn{flex:1}}@media(max-width:355px){main{padding-inline:10px}.timer-btn{padding-inline:4px}.timer-inner{gap:3px}.timer-read{min-width:55px;padding-inline:2px}}@media print{body{background:#fff;color:#000}.bg-logo{display:none}.timer,.controls,footer,.log,.export,.edit,.add-btn,.restore{display:none}.card{background:#fff;color:#000}.target,.hint,.number,.session span,.prev{color:#333}}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="fox" viewBox="0 0 2835 3415"><path fill="currentColor" d="M 1792 640 C 1804 596 1868 545 1900 511 C 2008 396 2125 290 2257 259 C 2208 335 2173 427 2162 517 C 2043 569 1917 607 1792 640 M 1490 803 C 1487 813 1375 834 1360 838 C 1331 846 1256 872 1232 851 C 1249 828 1273 806 1295 788 C 1320 765 1351 747 1385 746 C 1417 746 1446 762 1474 778 C 1483 784 1494 793 1490 803 M 2469 1047 C 2573 1005 2685 977 2796 967 C 2639 872 2474 786 2295 746 C 2217 729 2137 718 2057 710 C 2113 667 2183 634 2248 606 C 2277 452 2331 304 2407 167 C 2425 134 2448 98 2475 73 C 2291 113 2114 186 1955 286 C 1900 321 1847 359 1797 401 C 1754 437 1709 471 1670 512 C 1677 474 1689 432 1700 396 C 1703 388 1701 379 1696 373 C 1691 368 1685 364 1680 360 C 1664 348 1657 327 1650 309 C 1629 256 1602 205 1566 162 C 1500 295 1424 420 1333 537 C 1350 545 1367 549 1386 548 C 1379 570 1360 585 1338 592 C 1317 600 1300 597 1278 594 C 1223 652 1162 713 1107 770 C 1031 848 955 920 856 965 C 830 976 801 993 776 1005 C 730 1027 684 1047 637 1065 C 577 1089 517 1103 453 1103 C 420 1103 377 1111 344 1110 C 268 1109 203 1100 128 1085 C 129 1118 120 1155 130 1187 C 136 1205 148 1218 161 1231 C 188 1258 227 1264 264 1259 C 346 1248 412 1214 484 1174 C 473 1212 443 1242 408 1261 C 374 1280 340 1287 302 1297 C 334 1314 367 1332 402 1341 C 427 1347 452 1353 477 1358 C 533 1369 589 1385 646 1394 C 689 1401 730 1408 773 1410 C 825 1411 876 1412 927 1418 C 1012 1429 1098 1415 1183 1415 C 1241 1414 1299 1403 1356 1395 C 1455 1382 1546 1369 1639 1333 C 1499 1366 1353 1361 1209 1355 C 1157 1353 1099 1354 1047 1351 C 1228 1265 1436 1194 1609 1078 C 1668 1039 1728 999 1763 938 C 1828 945 1894 953 1959 961 C 1993 964 2027 968 2061 969 C 2133 969 2208 956 2275 982 C 2108 1016 1964 1117 1847 1242 C 1939 1245 2030 1250 2122 1252 C 2063 1277 2008 1311 1956 1349 C 1837 1436 1735 1554 1702 1697 C 1803 1576 1929 1475 2069 1402 C 2151 1359 2238 1326 2325 1294 C 2474 1238 2625 1188 2776 1137 C 2704 1124 2632 1107 2562 1088 C 2529 1079 2496 1067 2469 1047 M 1314 1576 C 1323 1569 1331 1561 1334 1550 C 1299 1566 1254 1596 1214 1631 C 1199 1643 1184 1661 1172 1676 C 1149 1705 1131 1725 1109 1755 C 1088 1786 1071 1823 1066 1860 C 1130 1796 1204 1757 1291 1735 C 1242 1790 1215 1843 1179 1908 C 1165 1934 1152 1971 1150 2000 C 1199 1963 1244 1939 1303 1918 C 1271 2074 1301 2238 1377 2377 C 1362 2252 1322 2150 1356 2032 C 1375 1964 1394 1900 1431 1853 C 1363 1853 1301 1867 1239 1895 C 1245 1859 1265 1827 1289 1800 C 1314 1773 1343 1751 1373 1730 C 1397 1712 1422 1695 1451 1687 C 1433 1676 1411 1676 1390 1677 C 1339 1678 1288 1679 1240 1696 C 1230 1700 1215 1703 1205 1708 C 1220 1652 1271 1614 1314 1576 M 2442 2879 C 2442 2879 2442 2879 2442 2879 C 2442 2879 2442 2879 2442 2879 M 2444 2877 C 2444 2877 2444 2877 2444 2877 M 2444 2877 C 2444 2877 2444 2877 2444 2877 C 2444 2877 2444 2877 2444 2877 M 2444 2877 C 2444 2877 2444 2877 2444 2877 C 2444 2877 2444 2877 2444 2877 M 2442 2879 C 2443 2878 2444 2878 2444 2877 C 2444 2878 2443 2878 2442 2879 M 2440 2882 C 2440 2882 2440 2882 2440 2882 C 2440 2882 2440 2882 2440 2882 M 2440 2881 C 2440 2881 2440 2881 2440 2882 C 2440 2881 2440 2881 2440 2881 M 2440 2882 C 2439 2882 2439 2882 2440 2882 M 2154 2311 C 2114 2138 2096 1964 2072 1788 C 2060 1697 2078 1587 2064 1494 C 1982 1581 1872 1629 1788 1712 C 1704 1794 1617 1909 1587 2035 C 1556 2160 1563 2293 1595 2418 C 1753 2262 1886 2076 1979 1875 C 1953 1997 1903 2133 1861 2251 C 1815 2377 1742 2414 1658 2534 C 1779 2635 1896 2744 1999 2862 C 2023 2890 2052 2921 2089 2921 C 2115 2922 2139 2906 2164 2903 C 2152 2919 2136 2933 2118 2944 C 2090 2961 2057 2970 2024 2964 C 1974 2956 1936 2915 1901 2878 C 1792 2758 1675 2644 1542 2552 C 1409 2461 1258 2391 1098 2368 C 1070 2364 1043 2362 1016 2360 C 967 2358 918 2358 869 2362 C 921 2378 973 2393 1024 2409 C 1068 2422 1111 2435 1153 2454 C 1277 2509 1378 2614 1429 2739 C 1349 2691 1260 2658 1173 2626 C 1144 2616 1115 2606 1085 2600 C 1014 2585 941 2587 868 2589 C 844 2590 820 2590 796 2591 C 751 2593 705 2594 665 2615 C 840 2635 1005 2729 1106 2872 C 999 2850 888 2847 780 2863 C 851 2883 914 2931 966 2984 C 1017 3037 1059 3099 1097 3162 C 987 3111 878 3059 765 3016 C 652 2974 538 2936 419 2918 C 319 2902 217 2902 116 2916 C 192 2749 323 2607 479 2511 C 531 2480 588 2452 630 2408 C 370 2533 150 2738 10 2990 C 211 2933 425 2986 620 3059 C 816 3131 1014 3217 1214 3279 C 1391 3334 1563 3349 1749 3340 C 1803 3337 1888 3300 1939 3284 C 2059 3248 2146 3193 2234 3105 C 2314 3022 2366 2966 2442 2879 C 2411 2820 2384 2806 2358 2769 C 2259 2626 2193 2480 2154 2311"/></symbol></defs></svg>
+<div class="bg-logo" aria-hidden="true"><svg viewBox="0 0 2835 3415"><use href="#fox"/></svg></div>
 <main>
-<header class="brand"><span><span class="logo" aria-hidden="true">P</span>PILARES</span><small>PLAN DE FUERZA</small></header>
+<header class="brand"><span>PILARES</span><small>PLAN DE FUERZA</small></header>
 <section class="hero" aria-labelledby="title">
-<svg aria-hidden="true" viewBox="0 0 260 230"><g transform="rotate(-35 130 115)" stroke="#351c26" stroke-width="2"><circle cx="130" cy="115" r="95" fill="none"/><circle cx="130" cy="115" r="77" fill="none"/><path d="M15 115h230M130 7v216" opacity=".6"/><g fill="#351c26" stroke="#ffb1a6" stroke-width="4"><rect x="25" y="100" width="210" height="30" rx="9"/><rect x="48" y="76" width="31" height="78" rx="7"/><rect x="77" y="58" width="38" height="114" rx="8"/><rect x="145" y="58" width="38" height="114" rx="8"/><rect x="181" y="76" width="31" height="78" rx="7"/></g></g></svg>
-<p class="eyebrow">Plan de postemporada</p><h1 id="title">Tren<br>superior</h1><p>4 semanas · 3 días por semana</p>
+<svg aria-hidden="true" viewBox="0 0 2835 3415"><use href="#fox"/></svg>
+<p class="eyebrow">Plan de postemporada · <span id="block-label">Bloque 1</span></p><h1 id="title">Tren<br>superior</h1><p>4 semanas · 3 días por semana</p>
 </section>
 <section class="controls" aria-label="Elegí tu sesión">
 <p class="label" id="week-label">Semana</p><div class="grid" id="weeks" role="group" aria-labelledby="week-label"></div>
@@ -32,92 +37,197 @@ details{margin-top:14px;border:1px solid var(--line);border-radius:13px;padding:
 <section aria-labelledby="session-title">
 <div class="session"><h2 id="session-title"></h2><span id="count" role="status"></span></div>
 <progress id="progress" aria-label="Series completadas en esta sesión"></progress>
-<p class="hint">Antes de empezar, hacé 2 series livianas del primer ejercicio.</p>
+<p class="hint">Antes de empezar, hacé 2 series livianas del primer ejercicio. Al marcar una serie, el descanso arranca solo.</p>
 <div id="exercises"></div>
+<button type="button" class="add-btn" id="add">+ Agregar ejercicio</button>
+<button type="button" class="restore" id="restore" hidden></button>
 </section>
 <details><summary>Cómo progresar y cuánto descansar</summary>
 <ol><li><strong>Semana 1.</strong> Empezá en el mínimo del rango y dejá unas 3 repeticiones en reserva.</li><li><strong>Semana 2.</strong> Mantené el peso y sumá una repetición por serie donde puedas.</li><li><strong>Semanas 3 y 4.</strong> Al completar el máximo del rango en las tres series con buena técnica, subí un poco el peso la próxima sesión y volvé al mínimo.</li></ol>
-<p>En el remo invertido, mantené las pausas y bajá un poco la barra cuando puedas completar las tres series con control.</p>
-<p>Descansá 2 min en presses y remos, y 60–90 s en vuelos, bíceps y tríceps. Para el press francés, usá 60–90 s.</p>
+<p>En las dominadas, cuando completes 8 repeticiones en las tres series, pasá a una banda más fina. Sin banda, sumá lastre de a poco.</p>
+<p>Descansá 2 min en presses, remos y dominadas, y 60–90 s en vuelos, face pulls, bíceps y tríceps.</p>
 </details>
+<section class="export" aria-label="Exportar registro">
+<div class="export-actions"><button class="export-btn" type="button" id="export">Copiar registro</button><button class="export-btn" type="button" id="new-block">Nuevo bloque</button></div>
+<p class="export-note">Al terminar las 4 semanas, empezá un bloque nuevo: el actual queda guardado en el registro y tus últimas cargas aparecen como referencia.</p>
+<p id="export-status" role="status"></p>
+<textarea id="export-text" readonly aria-label="Registro en texto"></textarea>
+</section>
 <div class="timer" aria-label="Temporizador de descanso">
-<div class="timer-inner"><div class="timer-read"><div class="label">Descanso</div><output id="clock" aria-label="Tiempo restante" aria-live="off">0:00</output></div>
+<div class="timer-inner" id="timer-inner"><div class="timer-read"><div class="label">Descanso</div><output id="clock" aria-label="Tiempo restante" aria-live="off">0:00</output></div>
 <button class="timer-btn" type="button" data-seconds="60">60 s</button><button class="timer-btn" type="button" data-seconds="90">90 s</button><button class="timer-btn" type="button" data-seconds="120">2 min</button><button class="timer-btn" type="button" id="stop" aria-label="Detener descanso">Parar</button></div>
 <div id="status" role="status"></div>
 </div>
-<footer id="storage-note">Tus series y cargas se guardan en este navegador.</footer>
+<footer id="storage-note">Tus series y cargas se guardan en este navegador. Copiá el registro de vez en cuando como respaldo.</footer>
 </main>
 <script>
+// [nombre, repeticiones, descanso (texto), descanso (segundos), carga]
+// carga: sin valor = kg · texto = unidad libre · false = sin campo
 const plan = [
   [
-    ['Press de banco plano con barra','6–8 reps','2 min'],
-    ['Remo pesado a una mano','8–10 reps por lado','2 min'],
-    ['Vuelos laterales','12–15 reps','60–90 s'],
-    ['Press francés','10–12 reps','60–90 s']
+    ['Press de banco plano con barra','6–8 reps','2 min',120],
+    ['Remo pesado a una mano','8–10 reps por lado','2 min',120],
+    ['Vuelos laterales','12–15 reps','60–90 s',90],
+    ['Press francés','10–12 reps','60–90 s',90]
   ],
   [
-    ['Press militar con barra','6–8 reps','2 min'],
-    ['Remo Meadows','8–10 reps por lado','2 min'],
-    ['Press de banco plano con una mancuerna','8–12 reps por lado','2 min'],
-    ['Curl de bíceps con barra','10–12 reps','60–90 s']
+    ['Press militar con barra','6–8 reps','2 min',120],
+    ['Remo Meadows','8–10 reps por lado','2 min',120],
+    ['Press de banco plano con una mancuerna','8–12 reps por lado','2 min',120],
+    ['Curl de bíceps con barra','10–12 reps','60–90 s',90],
+    ['Face pull con banda','15–20 reps · pausa de 1 s atrás','60–90 s',90,'Banda']
   ],
   [
-    ['Press de piso con barra','6–8 reps','2 min'],
-    ['Dominada acostada (remo invertido)','5 reps · 5 s de pausa arriba por repetición','2 min',false],
-    ['Press Arnold con mancuernas','10–12 reps','2 min'],
-    ['Tríceps con banda','12–15 reps','60–90 s','Banda']
+    ['Press de piso con barra','6–8 reps','2 min',120],
+    ['Dominadas (asistidas con banda si hace falta)','5–8 reps','2 min',120,'Banda / lastre'],
+    ['Press Arnold con mancuernas','10–12 reps','2 min',120],
+    ['Tríceps con banda','12–15 reps','60–90 s',90,'Banda']
   ]
 ];
+const NEW_EXERCISE = ['Ejercicio nuevo','8–10 reps','90 s',90];
 const $ = (selector) => document.querySelector(selector);
 const key = 'pilares-tren-superior-v1';
-let state = {week:0, day:0, log:{}};
+const defaults = () => ({week:0, day:0, log:{}, custom:{}, extra:{}, removed:{}, carry:{}, block:1, history:[]});
+let state = defaults();
 try {
   const saved = JSON.parse(localStorage.getItem(key));
-  if (saved && [0,1,2,3].includes(saved.week) && [0,1,2].includes(saved.day) && saved.log) state = saved;
+  if (saved && [0,1,2,3].includes(saved.week) && [0,1,2].includes(saved.day) && saved.log && typeof saved.log === 'object') {
+    state = Object.assign(defaults(), saved);
+  }
 } catch {}
+for (const field of ['log','custom','extra','removed','carry']) {
+  if (!state[field] || typeof state[field] !== 'object' || Array.isArray(state[field])) state[field] = {};
+}
+if (!Array.isArray(state.history)) state.history = [];
+if (!Number.isInteger(state.block) || state.block < 1) state.block = 1;
+
 const weekButtons = [];
 const dayButtons = [];
+const escapeHTML = (text) => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+function restLabel(seconds) {
+  if (seconds < 60) return seconds + ' s';
+  const minutes = Math.floor(seconds / 60);
+  const rest = seconds % 60;
+  return rest ? minutes + ':' + String(rest).padStart(2,'0') + ' min' : minutes + ' min';
+}
 function save() {
   try { localStorage.setItem(key, JSON.stringify(state)); }
   catch { $('#storage-note').textContent = 'El navegador bloqueó el guardado. El registro dura mientras esta página siga abierta.'; }
 }
+
+// Ejercicios de cada día: los del plan más los agregados, sin los quitados.
+// Cada ejercicio conserva siempre su número interno, así el registro no se mezcla.
+const slotCount = (day) => plan[day].length + (state.extra[day] || 0);
+function indicesFor(day) {
+  const list = [];
+  for (let i = 0; i < slotCount(day); i++) if (!state.removed[day + '-' + i]) list.push(i);
+  return list;
+}
+const isAdded = (day, index) => index >= plan[day].length;
+// Ejercicio efectivo: el del plan con tus cambios encima (valen para todas las semanas)
+function ex(day, index) {
+  const [name, reps, rest, seconds, load] = plan[day][index] ?? NEW_EXERCISE;
+  const c = state.custom[day + '-' + index] || {};
+  return {
+    name: c.name ?? name,
+    reps: c.reps ?? reps,
+    sets: c.sets ?? 3,
+    seconds: c.seconds ?? seconds,
+    rest: c.seconds != null ? restLabel(c.seconds) : rest,
+    unit: c.unit ?? (load === false ? '' : (load ?? 'kg')),
+    custom: !!state.custom[day + '-' + index]
+  };
+}
+const isKg = (unit) => unit.trim().toLowerCase() === 'kg';
+const setsDone = (entry, n) => entry ? entry.sets.slice(0, n).filter(Boolean).length : 0;
 function record(week, day, index) {
   return state.log[[week, day, index].join('-')];
 }
 function activeRecord(index) {
   const id = [state.week, state.day, index].join('-');
-  return state.log[id] ??= {sets:[false,false,false], weight:''};
+  return state.log[id] ??= {sets:[], weight:''};
 }
-function completed(day) {
-  return plan[day].reduce((total, _, index) => total + (record(state.week,day,index)?.sets.filter(Boolean).length ?? 0), 0);
+const completed = (day) => indicesFor(day).reduce((t, i) => t + setsDone(record(state.week, day, i), ex(day, i).sets), 0);
+const totalSets = (day) => indicesFor(day).reduce((t, i) => t + ex(day, i).sets, 0);
+// Última carga anotada: primero en semanas anteriores de este bloque, si no, del bloque anterior
+function previousLoad(index) {
+  for (let week = state.week - 1; week >= 0; week--) {
+    const weight = record(week, state.day, index)?.weight?.trim();
+    if (weight) return {label: 'Semana ' + (week + 1), weight};
+  }
+  const carried = state.carry[state.day + '-' + index];
+  return carried ? {label: 'Bloque anterior', weight: carried} : null;
 }
+// Botones que piden un segundo toque para confirmar
+function confirmTap(button, prompt, action) {
+  if (button.dataset.armed) {
+    clearTimeout(Number(button.dataset.armed));
+    delete button.dataset.armed;
+    button.textContent = button.dataset.label;
+    action();
+    return;
+  }
+  button.dataset.label = button.textContent;
+  button.textContent = prompt;
+  button.dataset.armed = String(setTimeout(() => {
+    delete button.dataset.armed;
+    button.textContent = button.dataset.label;
+  }, 4000));
+}
+
 function updateProgress() {
   const count = completed(state.day);
-  const total = plan[state.day].length * 3;
-  $('#progress').max = total;
+  const total = totalSets(state.day);
+  $('#progress').max = Math.max(total, 1);
   $('#progress').value = count;
-  $('#count').textContent = count === total ? 'Día completo ✓' : count + ' / ' + total + ' series';
+  $('#count').textContent = total === 0 ? 'Sin ejercicios' : count === total ? 'Día completo ✓' : count + ' / ' + total + ' series';
   dayButtons.forEach((button, day) => {
-    button.lastElementChild.textContent = completed(day) + '/' + plan[day].length * 3 + ' series';
+    button.lastElementChild.textContent = completed(day) + '/' + totalSets(day) + ' series';
   });
+}
+function editForm(e, index) {
+  const v = (x) => escapeHTML(x);
+  const reset = e.custom && !isAdded(state.day, index) ? '<button type="button" data-reset>Volver al original</button>' : '';
+  return '<details class="edit"><summary>Editar ejercicio' + (e.custom && !isAdded(state.day, index) ? ' · modificado' : '') + '</summary>' +
+    '<form data-edit="' + index + '">' +
+    '<label>Nombre<input name="name" maxlength="80" required value="' + v(e.name) + '"></label>' +
+    '<div class="edit-row"><label>Series<input name="sets" type="number" inputmode="numeric" min="1" max="8" required value="' + e.sets + '"></label>' +
+    '<label>Repeticiones<input name="reps" maxlength="60" value="' + v(e.reps) + '"></label></div>' +
+    '<div class="edit-row"><label>Descanso (segundos)<input name="seconds" type="number" inputmode="numeric" min="0" max="600" step="5" required value="' + e.seconds + '"></label>' +
+    '<label>Unidad de carga<input name="unit" maxlength="16" placeholder="Vacío = sin campo" value="' + v(e.unit) + '"></label></div>' +
+    '<div class="edit-actions"><button type="submit">Guardar</button>' + reset + '<button type="button" class="danger" data-remove>Quitar ejercicio</button></div>' +
+    '</form></details>';
 }
 function render() {
   weekButtons.forEach((button, i) => button.setAttribute('aria-pressed', i === state.week));
   dayButtons.forEach((button, i) => button.setAttribute('aria-pressed', i === state.day));
+  $('#block-label').textContent = 'Bloque ' + state.block;
   $('#session-title').textContent = 'Semana ' + (state.week + 1) + ' · Día ' + (state.day + 1);
-  $('#exercises').innerHTML = plan[state.day].map(([name,reps,rest,load], index) => {
-    const entry = record(state.week,state.day,index);
-    const checks = Array.from({length:3}, (_, i) => {
+  const cards = indicesFor(state.day).map((index, position) => {
+    const e = ex(state.day, index);
+    const name = escapeHTML(e.name);
+    const unit = e.unit.trim();
+    const entry = record(state.week, state.day, index);
+    const checks = Array.from({length:e.sets}, (_, i) => {
       const done = entry?.sets[i] ?? false;
       return '<button type="button" class="set" data-set="' + i + '" aria-pressed="' + done + '" aria-label="Serie ' + (i+1) + ' de ' + name + '">' + (done ? '✓' : i+1) + '</button>';
     }).join('');
-    const field = load === false ? '' : '<label class="weight"><input autocomplete="off" maxlength="12" aria-label="' + (load ?? 'Peso en kg') + ' para ' + name + '" inputmode="' + (load ? 'text' : 'decimal') + '" placeholder="—"> ' + (load ?? 'kg') + '</label>';
-    return '<article class="card' + (entry?.sets.every(Boolean) ? ' done' : '') + '" data-exercise="' + index + '"><div class="card-top"><span class="number">' + String(index+1).padStart(2,'0') + '</span><div><h3>' + name + '</h3><p class="target">3 series · ' + reps + ' · ' + rest + ' descanso</p></div></div><div class="log"><div class="sets">' + checks + '</div>' + field + '</div></article>';
-  }).join('');
-  $('#exercises').querySelectorAll('input').forEach(input => {
-    const index = Number(input.closest('[data-exercise]').dataset.exercise);
-    input.value = record(state.week,state.day,index)?.weight ?? '';
+    const field = !unit ? '' : '<label class="weight"><input autocomplete="off" maxlength="12" aria-label="' + (isKg(unit) ? 'Peso en kg' : escapeHTML(unit)) + ' para ' + name + '" inputmode="' + (isKg(unit) ? 'decimal' : 'text') + '" placeholder="—"> ' + escapeHTML(unit) + '</label>';
+    const prev = unit ? previousLoad(index) : null;
+    const prevLine = prev ? '<p class="prev">' + prev.label + ': ' + escapeHTML(prev.weight) + (isKg(unit) ? ' kg' : '') + '</p>' : '';
+    const reps = e.reps.trim() ? ' · ' + escapeHTML(e.reps) : '';
+    const done = setsDone(entry, e.sets) === e.sets;
+    return '<article class="card' + (done ? ' done' : '') + '" data-exercise="' + index + '"><div class="card-top"><span class="number">' + String(position + 1).padStart(2,'0') + '</span><div><h3>' + name + '</h3><p class="target">' + e.sets + (e.sets === 1 ? ' serie' : ' series') + reps + ' · ' + e.rest + ' descanso</p>' + prevLine + '</div></div><div class="log"><div class="sets">' + checks + '</div>' + field + '</div>' + editForm(e, index) + '</article>';
   });
+  $('#exercises').innerHTML = cards.join('') || '<p class="hint">Este día no tiene ejercicios. Sumá uno con el botón de abajo.</p>';
+  $('#exercises').querySelectorAll('.weight input').forEach(input => {
+    const index = Number(input.closest('[data-exercise]').dataset.exercise);
+    input.value = record(state.week, state.day, index)?.weight ?? '';
+  });
+  let removed = 0;
+  for (let i = 0; i < slotCount(state.day); i++) if (state.removed[state.day + '-' + i]) removed++;
+  $('#restore').hidden = !removed;
+  $('#restore').textContent = 'Restaurar ejercicios quitados (' + removed + ')';
   updateProgress();
 }
 function addSelector(group, buttons, count, label, field) {
@@ -138,47 +248,223 @@ function addSelector(group, buttons, count, label, field) {
 }
 addSelector('#weeks', weekButtons, 4, 'Semana', 'week');
 addSelector('#days', dayButtons, 3, 'Día', 'day');
+
 $('#exercises').addEventListener('click', event => {
+  const card = event.target.closest('[data-exercise]');
+  if (!card) return;
+  const index = Number(card.dataset.exercise);
+  const slot = state.day + '-' + index;
+  if (event.target.closest('[data-reset]')) {
+    delete state.custom[slot];
+    save();
+    render();
+    return;
+  }
+  const remove = event.target.closest('[data-remove]');
+  if (remove) {
+    confirmTap(remove, 'Tocá de nuevo para quitar', () => {
+      state.removed[slot] = true;
+      save();
+      render();
+    });
+    return;
+  }
   const button = event.target.closest('[data-set]');
   if (!button) return;
-  const card = button.closest('[data-exercise]');
-  const entry = activeRecord(Number(card.dataset.exercise));
+  const e = ex(state.day, index);
+  const entry = activeRecord(index);
   const i = Number(button.dataset.set);
   entry.sets[i] = !entry.sets[i];
   button.setAttribute('aria-pressed', entry.sets[i]);
   button.textContent = entry.sets[i] ? '✓' : i + 1;
-  card.classList.toggle('done', entry.sets.every(Boolean));
+  card.classList.toggle('done', setsDone(entry, e.sets) === e.sets);
   save();
   updateProgress();
+  // Al marcar (no al desmarcar) arranca el descanso del ejercicio
+  if (entry.sets[i] && e.seconds > 0 && completed(state.day) < totalSets(state.day)) {
+    startTimer(e.seconds, e.name);
+  }
+});
+$('#exercises').addEventListener('submit', event => {
+  event.preventDefault();
+  const form = event.target;
+  const index = Number(form.dataset.edit);
+  const data = new FormData(form);
+  const clamp = (value, min, max, fallback) => {
+    const n = parseInt(value, 10);
+    return Number.isFinite(n) ? Math.min(max, Math.max(min, n)) : fallback;
+  };
+  const current = ex(state.day, index);
+  state.custom[state.day + '-' + index] = {
+    name: String(data.get('name')).trim() || current.name,
+    sets: clamp(data.get('sets'), 1, 8, current.sets),
+    reps: String(data.get('reps')).trim(),
+    seconds: clamp(data.get('seconds'), 0, 600, current.seconds),
+    unit: String(data.get('unit')).trim()
+  };
+  save();
+  render();
 });
 $('#exercises').addEventListener('input', event => {
-  if (!event.target.matches('input')) return;
+  if (!event.target.matches('.weight input')) return;
   const index = Number(event.target.closest('[data-exercise]').dataset.exercise);
   activeRecord(index).weight = event.target.value;
   save();
 });
+$('#add').addEventListener('click', () => {
+  const day = state.day;
+  state.extra[day] = (state.extra[day] || 0) + 1;
+  const index = slotCount(day) - 1;
+  save();
+  render();
+  const card = $('#exercises').querySelector('[data-exercise="' + index + '"]');
+  if (!card) return;
+  card.querySelector('details.edit').open = true;
+  card.scrollIntoView({block:'center', behavior:'smooth'});
+  card.querySelector('input[name="name"]').select();
+});
+$('#restore').addEventListener('click', () => {
+  for (let i = 0; i < slotCount(state.day); i++) delete state.removed[state.day + '-' + i];
+  save();
+  render();
+});
+
+// Temporizador con aviso por vibración y sonido
 let deadline = 0;
 let timer;
+let audio;
+function unlockAudio() {
+  try {
+    audio ??= new (window.AudioContext || window.webkitAudioContext)();
+    if (audio.state === 'suspended') audio.resume();
+  } catch {}
+}
+function beep() {
+  if (!audio) return;
+  try {
+    [0, 0.3, 0.6].forEach(offset => {
+      const start = audio.currentTime + offset;
+      const osc = audio.createOscillator();
+      const gain = audio.createGain();
+      osc.frequency.value = 880;
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(0.35, start + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + 0.2);
+      osc.connect(gain).connect(audio.destination);
+      osc.start(start);
+      osc.stop(start + 0.22);
+    });
+  } catch {}
+}
 function updateTimer() {
-  const seconds = Math.max(0,Math.ceil((deadline - Date.now()) / 1000));
+  const seconds = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
   $('#clock').textContent = Math.floor(seconds/60) + ':' + String(seconds%60).padStart(2,'0');
   if (seconds === 0) {
     clearInterval(timer);
-    if (deadline) $('#status').textContent = 'Descanso terminado.';
+    $('#timer-inner').classList.remove('running');
+    if (deadline) {
+      $('#status').textContent = 'Descanso terminado. ¡A la próxima serie!';
+      try { navigator.vibrate?.([250,120,250,120,250]); } catch {}
+      beep();
+    }
     deadline = 0;
   }
 }
-document.querySelectorAll('[data-seconds]').forEach(button => button.addEventListener('click', () => {
+function startTimer(seconds, name) {
+  unlockAudio();
   clearInterval(timer);
-  $('#status').textContent = '';
-  deadline = Date.now() + Number(button.dataset.seconds) * 1000;
+  $('#status').textContent = name ? 'Descansando · ' + name : '';
+  deadline = Date.now() + seconds * 1000;
+  $('#timer-inner').classList.add('running');
   updateTimer();
   timer = setInterval(updateTimer, 200);
+}
+document.querySelectorAll('[data-seconds]').forEach(button => button.addEventListener('click', () => {
+  startTimer(Number(button.dataset.seconds));
 }));
 $('#stop').addEventListener('click', () => {
   deadline = 0;
+  clearInterval(timer);
+  $('#timer-inner').classList.remove('running');
   $('#status').textContent = '';
   updateTimer();
+});
+document.addEventListener('visibilitychange', () => { if (deadline) updateTimer(); });
+
+// Registro en texto: bloque actual y bloques anteriores
+function blockText(suffix = '') {
+  const lines = [];
+  for (let week = 0; week < 4; week++) {
+    const days = [];
+    for (let day = 0; day < 3; day++) {
+      const rows = indicesFor(day).map(index => {
+        const e = ex(day, index);
+        const entry = record(week, day, index);
+        if (!entry) return null;
+        const sets = setsDone(entry, e.sets);
+        const weight = entry.weight?.trim();
+        if (!sets && !weight) return null;
+        return '  · ' + e.name + ' — ' + sets + '/' + e.sets + ' series' + (weight ? ' · ' + weight + (e.unit.trim() ? ' ' + e.unit.trim() : '') : '');
+      }).filter(Boolean);
+      if (rows.length) days.push(' Día ' + (day + 1), ...rows);
+    }
+    if (days.length) lines.push('Semana ' + (week + 1), ...days);
+  }
+  return lines.length ? ['BLOQUE ' + state.block + suffix, ...lines].join('\n') : '';
+}
+function exportText() {
+  const parts = [];
+  const current = blockText(' (en curso)');
+  if (current) parts.push(current);
+  state.history.slice().reverse().forEach(h => parts.push(h.text));
+  return parts.length ? ['PILARES · Tren superior', ...parts].join('\n\n') : '';
+}
+$('#export').addEventListener('click', async () => {
+  const text = exportText();
+  const area = $('#export-text');
+  if (!text) {
+    $('#export-status').textContent = 'Todavía no hay nada registrado.';
+    area.classList.remove('show');
+    return;
+  }
+  area.value = text;
+  try {
+    await navigator.clipboard.writeText(text);
+    $('#export-status').textContent = 'Registro copiado. Pegalo en una nota o mandatelo por WhatsApp.';
+    area.classList.remove('show');
+  } catch {
+    $('#export-status').textContent = 'No se pudo copiar solo: seleccioná el texto y copialo a mano.';
+    area.classList.add('show');
+    area.focus();
+    area.select();
+  }
+});
+$('#new-block').addEventListener('click', event => {
+  confirmTap(event.currentTarget, 'Tocá de nuevo para confirmar', () => {
+    // Guarda la última carga de cada ejercicio como referencia para el bloque nuevo
+    const carry = {...state.carry};
+    for (let day = 0; day < 3; day++) {
+      for (const index of indicesFor(day)) {
+        for (let week = 3; week >= 0; week--) {
+          const weight = record(week, day, index)?.weight?.trim();
+          if (weight) { carry[day + '-' + index] = weight; break; }
+        }
+      }
+    }
+    const date = new Date().toLocaleDateString('es-AR');
+    const text = blockText(' (cerrado el ' + date + ')');
+    if (text) state.history.push({block: state.block, date, text});
+    state.log = {};
+    state.carry = carry;
+    state.block += 1;
+    state.week = 0;
+    state.day = 0;
+    save();
+    render();
+    $('#export-text').classList.remove('show');
+    $('#export-status').textContent = 'Empezaste el bloque ' + state.block + '. El anterior quedó guardado en el registro.';
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
 });
 render();
 </script>
